@@ -6,6 +6,12 @@ def first_n_sum(n):
         i+=1
     return sum
 
+def recurSum(n):
+    if n==1:
+        return 1
+    return  n+recurSum(n-1)
+
+
 if __name__ == '__main__':
     n= int(input("enter the limit of n"))
-    print(first_n_sum(n))
+    print(recurSum(n))
